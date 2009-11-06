@@ -14,7 +14,7 @@ if ( function_exists('register_sidebar') ) {
 $theme_prefix = "wyws_";
 
 // change this at every release, reset cache on CSS and Javascript
-$version = "12345679"; //
+$version = "89306758";
 
 // place any CSS to load in this array
 $stylesheets = array(
@@ -25,7 +25,6 @@ $stylesheets = array(
 // place any scripts to load in this array
 $scripts = array(
 	"jquery-1.3.2.min.js",
-	"cufon-yui.js",
 	"main.js"
 );
 

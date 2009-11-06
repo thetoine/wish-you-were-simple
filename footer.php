@@ -20,7 +20,9 @@
 </div>
 </div>
 
-
+<script type="text/javascript" charset="utf-8">
+	var WP_THEME_PATH = "<?php bloginfo('stylesheet_directory'); ?>";
+</script>
 
 <!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
 <?php /* "Just what do you think you're doing Dave?" */ ?>
