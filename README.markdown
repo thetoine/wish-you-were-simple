@@ -1,3 +1,3 @@
 ### Wish You Were Simple
 
-Striped down theme for WordPress.
+Stripped down theme for WordPress.
