@@ -1,6 +1,6 @@
 ## Wish You Were Simple
 
-Stripped down theme for WordPress.
+Stripped down theme for WordPress theme developers.
 
 ### Sidebars
 
@@ -29,10 +29,9 @@ Add CSS to load with __$stylesheets__ array :
 
 Add scripts to load with __$scripts__ array :
 
-	$stylesheets = array(
-		"reset.css",
-		"style.css"
-		"some-path/my-cute-stylesheet.css"
+	$scripts = array(
+		"jquery-1.3.2.min.js",
+		"main.js"
 	);
 
 __$version__ global is used for preventing browser caching. Change as you release to another random value.
