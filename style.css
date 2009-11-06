@@ -1,0 +1,423 @@
+/*
+Theme Name: Wish you were Simple
+Theme URI: http://toine.ca
+Description: A simple basic WordPress theme, jQuery is loaded, theme options page
+Version: 0.3
+Author: Antoine Girard
+Author URI: http://toine.ca/
+Tags: grey, simple, minimalist, jquery, theme options page
+
+*/
+
+
+/* Begin Typography & Colors */
+body {
+	font-size: 62.5%; /* Resets 1em to 10px */
+	font-family: Helvetica, Arial, Sans-Serif;
+	background: #fff;
+	color: #615e60;
+	text-align: center;
+}
+
+
+
+
+/*
+ 	-----------------------------------
+	Links, colors, etc.
+ 	-----------------------------------
+*/
+a 			{	color: #32dcf0; text-decoration: none; }
+a:hover {	color: #000; text-decoration: underline; }
+a:focus {	outline: none; }
+
+
+/*
+ 	-----------------------------------
+	Headings
+ 	-----------------------------------
+*/
+h1 { font-size:138.5%; }
+h2 { font-size:123.1%; }
+h3 { font-size:108%; }
+h4 { font-size:100%; }
+h1, h2, h3, h4 {
+	margin: 1em 0;
+}
+
+/*
+ 	-----------------------------------
+	Lists
+ 	-----------------------------------
+*/
+
+ul {
+	margin: 0 0 1em 0;
+}
+
+ul li {
+	margin-left: 1em;
+}
+
+
+
+
+/* 
+	-----------------------------------
+	#page
+	-----------------------------------
+*/
+#page {
+	padding: 0;
+	width: 900px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/* 
+	-----------------------------------
+	#header
+	-----------------------------------
+*/
+
+#header {
+	margin-bottom: 10px;
+	padding: 0 0 10px 0;
+}
+
+#header h1 {
+	margin-bottom: 10px;
+	font-size: 3em;
+}
+
+#header .description {
+	font-size: 1.2em;
+}
+
+
+
+/* 
+	-----------------------------------
+	#content
+	-----------------------------------
+*/
+
+#content {
+	font-size: 1.2em;
+	min-height: 400px;
+	margin: 0 0 10px 0;
+}
+
+#content.narrowcolumn {
+	float: left;
+	padding: 0 20px 20px 0;
+	width: 650px;
+}
+
+#content p {
+	line-height: 1.75em;
+	margin-bottom: 15px;
+}
+
+#content h2.pagetitle {
+	margin-top: 0;
+	padding-top: 1em;
+	border-top: 3px solid #2b2b2b;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+/* 
+	-----------------------------------
+	Posts
+	-----------------------------------
+*/
+.post {
+	border-top: 3px solid #2b2b2b;
+	margin-bottom: 40px;
+}
+
+.post .entry {
+	margin: 10px 0;
+}
+
+#content p.postmetadata { 
+	font-weight: bold;
+	color: #574439;
+	line-height: 1.2em;
+}
+
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.post blockquote p,
+.post blockquote p {
+	color: #574439;
+	font-style: italic;
+}
+
+/* list in entry */
+.entry ul {
+	padding: 0 0 0 30px;
+	list-style: disc;
+}
+
+.entry ul,
+.entry ol {
+	margin-bottom: 20px;
+}
+
+.entry li {
+	margin: 7px 0 5px 10px;
+}
+
+.entry ol {
+	padding: 0 0 0 35px;
+}
+
+
+
+
+/* 
+	-----------------------------------
+	#sidebar
+	-----------------------------------
+*/
+
+#sidebar {
+	border-top: 3px solid #2b2b2b;
+	margin-left: 700px;
+	width: 200px;
+	padding-top: 1em;
+}
+
+#sidebar h2 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+#sidebar ul {
+	list-style: none;
+	padding-bottom: 10px;
+}
+
+#sidebar ul li.widget { 
+	margin-left: 0;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px dotted #2b2b2b;	
+}
+
+#sidebar ul li ul li {
+	margin-bottom: 3px;
+}
+
+#sidebar ul.children {
+	margin-top: 3px;
+	margin-left: 15px;
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+/* search form in sidebar */
+#sidebar .widget_search form {
+	min-height: 25px;
+}
+
+#sidebar .widget_search input {
+	width: 120px;
+	float: left;
+}
+
+
+#sidebar .widget_search input[type=submit] { 
+	float: left;
+	width: auto;
+	margin-top: 1px;
+	margin-left: 5px;
+}
+
+/* 
+	-----------------------------------
+	comments
+	-----------------------------------
+*/
+
+h3#comments,
+#respond h3 {
+	font-weight: bold;
+	border-top: 1px solid #000;
+	padding-top: 10px;
+}
+
+.commentlist li ul li {
+	font-size: 1em;
+}
+
+.commentlist li {
+	font-weight: bold;
+}
+
+.commentlist li .avatar { 
+	float: right;
+	border: 1px solid #eee;
+	padding: 2px;
+	background: #fff;
+}
+
+.commentlist cite, .commentlist cite a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.1em;
+}
+
+.commentlist p {
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
+	width: 80%;
+}
+
+.commentmetadata {
+	font-weight: normal;
+	font-size: 0.9em;
+	margin: 4px 0;
+}
+
+/* 
+	-----------------------------------
+	#footer
+	-----------------------------------
+*/
+
+#footer {
+	color: #574439;
+	margin: 10px 0;
+	padding: 10px 0;
+	clear: both;
+}
+
+/* 
+	-----------------------------------
+	Misc. WordPress various tag, etc
+	-----------------------------------
+*/
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+	cursor: help;
+}
+
+acronym, abbr {
+	border-bottom: 1px dashed #999;
+}
+
+blockquote {
+	margin: 15px 30px 0 10px;
+	padding-left: 20px;
+	border-left: 5px solid #ddd;
+}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+}
+
+.center {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.screen-reader-text {
+	position: absolute;
+	left: -1000em;
+}
+
+
+.navigation {
+	display: block;
+	text-align: center;
+	padding: 5px 0;
+	height: 20px;
+}
+/* End Various Tags & Classes*/
+
+/* Captions */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+/* End captions */
+
+/* Begin Images */
+p img {
+	padding: 0;
+	max-width: 100%;
+}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+}
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+/* End Images */
+
+hr { display: none; }
