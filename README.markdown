@@ -2,6 +2,8 @@
 
 Stripped down theme for WordPress theme developers.
 
+The name? I know... WordPress is relatively simple and straight forward but I wanted something even more minimalist to start with.
+
 ### Sidebars
 
 This theme come with 3 sidebar _zones_ (à la Drupal blocks). Your existing widgets might end up in _header_ zone by default, just move them to _sidebar_ zone.
@@ -13,7 +15,6 @@ This theme come with 3 sidebar _zones_ (à la Drupal blocks). Your existing widg
 	}
 
 ### function.php
-
 
 #### Assets
 
@@ -59,7 +60,7 @@ Options can be grouped by __sets__, simply populate the _options_sets_ array wit
 	
 Access them in your theme with [_get_option(option_name)_](http://codex.wordpress.org/Function_Reference/get_option)
 
-### Included javascripts
+### Included scripts
 
 * jQuery (loaded by default)
 * cufon [http://wiki.github.com/sorccu/cufon/about](http://wiki.github.com/sorccu/cufon/about)

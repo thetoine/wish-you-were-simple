@@ -1,24 +1,23 @@
 /*
 Theme Name: Wish you were Simple
 Theme URI: http://toine.ca
-Description: A simple basic WordPress theme, jQuery is loaded, comes with a basic theme options page
+Description: A simple basic WordPress theme. jQuery and some plugins are included. Comes with a basic theme options page.
 Version: 0.3
 Author: Antoine Girard
 Author URI: http://toine.ca/
-Tags: simple, minimalist, jquery, theme options page
+Tags: simple, minimalist, jquery, options page
 
 */
 
 
 /* Begin Typography & Colors */
 body {
-	font-size: 62.5%; /* Resets 1em to 10px */
-	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 14px;
+	font-family: Georgia, Times, "Times New Roman", Serif;
 	background: #fff;
 	color: #615e60;
 	text-align: center;
 }
-
 
 
 
@@ -27,7 +26,7 @@ body {
 	Links, colors, etc.
  	-----------------------------------
 */
-a 			{	color: #32dcf0; text-decoration: none; }
+a 			{	color: #25989E; text-decoration: none; }
 a:hover {	color: #000; text-decoration: underline; }
 a:focus {	outline: none; }
 
@@ -37,13 +36,14 @@ a:focus {	outline: none; }
 	Headings
  	-----------------------------------
 */
-h1 { font-size:138.5%; }
-h2 { font-size:123.1%; }
-h3 { font-size:108%; }
-h4 { font-size:100%; }
+h1 { font-size: 36px; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+h4 { font-size: 14px; }
 h1, h2, h3, h4 {
-	margin: 1em 0;
+	margin: 0 0 10px 0;
 }
+
 
 /*
  	-----------------------------------
@@ -52,11 +52,11 @@ h1, h2, h3, h4 {
 */
 
 ul {
-	margin: 0 0 1em 0;
+	margin: 0 0 10px 0;
 }
 
 ul li {
-	margin-left: 1em;
+	margin-left: 10px;
 }
 
 
@@ -67,12 +67,14 @@ ul li {
 	#page
 	-----------------------------------
 */
+
 #page {
 	padding: 0;
 	width: 900px;
 	margin: 0 auto;
 	text-align: left;
 }
+
 
 /* 
 	-----------------------------------
@@ -81,17 +83,18 @@ ul li {
 */
 
 #header {
-	margin-bottom: 10px;
-	padding: 0 0 10px 0;
+	margin-bottom: 30px;
+	padding: 10px 0 10px 0;
 }
 
 #header h1 {
 	margin-bottom: 10px;
-	font-size: 3em;
 }
 
 #header .description {
-	font-size: 1.2em;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
 }
 
 
@@ -103,7 +106,7 @@ ul li {
 */
 
 #content {
-	font-size: 1.2em;
+	font-size: 14px;
 	min-height: 400px;
 	margin: 0 0 10px 0;
 }
@@ -115,14 +118,12 @@ ul li {
 }
 
 #content p {
-	line-height: 1.75em;
+	line-height: 18px;
 	margin-bottom: 15px;
 }
 
 #content h2.pagetitle {
 	margin-top: 0;
-	padding-top: 1em;
-	border-top: 3px solid #2b2b2b;
 	margin-bottom: 20px;
 	font-weight: bold;
 }
@@ -133,7 +134,6 @@ ul li {
 	-----------------------------------
 */
 .post {
-	border-top: 3px solid #2b2b2b;
 	margin-bottom: 40px;
 }
 
@@ -144,7 +144,7 @@ ul li {
 #content p.postmetadata { 
 	font-weight: bold;
 	color: #574439;
-	line-height: 1.2em;
+	line-height: 14px;
 }
 
 .postmetadata ul, .postmetadata li {
@@ -155,29 +155,24 @@ ul li {
 
 .post blockquote p,
 .post blockquote p {
-	color: #574439;
 	font-style: italic;
 }
 
 /* list in entry */
 .entry ul {
-	padding: 0 0 0 30px;
+	margin-bottom: 20px;
+	padding: 0 0 0 25px;
 	list-style: disc;
 }
 
-.entry ul,
 .entry ol {
-	margin-bottom: 20px;
+	padding: 0 0 0 25px;
+	margin-bottom: 20px;	
 }
 
 .entry li {
 	margin: 7px 0 5px 10px;
 }
-
-.entry ol {
-	padding: 0 0 0 35px;
-}
-
 
 
 
@@ -188,10 +183,10 @@ ul li {
 */
 
 #sidebar {
-	border-top: 3px solid #2b2b2b;
 	margin-left: 700px;
 	width: 200px;
-	padding-top: 1em;
+	padding-left: 10px;
+	border-left: 1px solid #E0E0E0;
 }
 
 #sidebar h2 {
@@ -201,18 +196,20 @@ ul li {
 
 #sidebar ul {
 	list-style: none;
-	padding-bottom: 10px;
+	padding-left: 0;
 }
 
+#sidebar ul li, 
 #sidebar ul li.widget { 
 	margin-left: 0;
 	margin-bottom: 15px;
-	padding-bottom: 15px;
-	border-bottom: 1px dotted #2b2b2b;	
 }
 
-#sidebar ul li ul li {
+#sidebar ul li ul li,
+#sidebar ul li.widget ul li {
+  margin-left: 10px;
 	margin-bottom: 3px;
+	padding-bottom: 0;
 }
 
 #sidebar ul.children {
@@ -222,23 +219,7 @@ ul li {
 	padding-bottom: 0;
 }
 
-/* search form in sidebar */
-#sidebar .widget_search form {
-	min-height: 25px;
-}
 
-#sidebar .widget_search input {
-	width: 120px;
-	float: left;
-}
-
-
-#sidebar .widget_search input[type=submit] { 
-	float: left;
-	width: auto;
-	margin-top: 1px;
-	margin-left: 5px;
-}
 
 /* 
 	-----------------------------------
@@ -271,7 +252,7 @@ h3#comments,
 .commentlist cite, .commentlist cite a {
 	font-weight: bold;
 	font-style: normal;
-	font-size: 1.1em;
+	font-size: 14px;
 }
 
 .commentlist p {
@@ -283,7 +264,7 @@ h3#comments,
 
 .commentmetadata {
 	font-weight: normal;
-	font-size: 0.9em;
+	font-size: 11px;
 	margin: 4px 0;
 }
 
