@@ -88,7 +88,7 @@ function theme_options_page() {
 	// options
 	// add new sets and options by adding data to the array
 	$options_sets = array(
-		'sets' => array(
+		0 => array(
 			'title' => 'Misc.',
 			'intro_text' => 'Change misc. settings here.',
 			'set_options' => array(
